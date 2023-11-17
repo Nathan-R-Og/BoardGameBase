@@ -1,0 +1,423 @@
+[gd_scene load_steps=8 format=3 uid="uid://dlw66clxbd2fc"]
+
+[ext_resource type="Script" path="res://assets/scenes/board/Camera.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://cirxk2t5u4gxk" path="res://icon.png" id="2_omtu4"]
+[ext_resource type="Script" path="res://assets/scenes/board/Board.gd" id="2_wxxg5"]
+[ext_resource type="Script" path="res://assets/scenes/board/Tiles.gd" id="3_frn0s"]
+[ext_resource type="Texture2D" uid="uid://b6ek40a32d78i" path="res://assets/sprites/1.png" id="4_4vpuk"]
+[ext_resource type="Script" path="res://assets/scenes/board/Space.gd" id="5_gc1ae"]
+[ext_resource type="PackedScene" uid="uid://cev3myoour5cf" path="res://assets/scenes/INSTANCES/player/player.tscn" id="7_27qut"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("2_wxxg5")
+
+[node name="The" type="Node2D" parent="."]
+
+[node name="Plate" type="Node2D" parent="The"]
+
+[node name="icon" type="Sprite2D" parent="The/Plate"]
+scale = Vector2(2, 2)
+texture = ExtResource("2_omtu4")
+
+[node name="1" type="Marker2D" parent="The/Plate"]
+position = Vector2(-32, -32)
+
+[node name="2" type="Marker2D" parent="The/Plate"]
+position = Vector2(32, -32)
+
+[node name="3" type="Marker2D" parent="The/Plate"]
+position = Vector2(-32, 32)
+
+[node name="4" type="Marker2D" parent="The/Plate"]
+position = Vector2(32, 32)
+
+[node name="Tiles" type="Node2D" parent="The"]
+position = Vector2(128, 128)
+script = ExtResource("3_frn0s")
+
+[node name="start" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(385, 433)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+goBack = Array[NodePath]([NodePath("../74")])
+
+[node name="2" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(490, 426)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="3" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(611, 369)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="6" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(859, 378)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="23" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1008, 275)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="24" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1143, 142)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="5" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1344, 7)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="25" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1316, 188)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="26" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1270, 342)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+myType = 1
+
+[node name="27" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1257, 479)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="28" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1225, 630)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="29" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1201, 767)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="7" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1184, 890)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="30" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1362, 819)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="8" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1488, 666)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="9" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1536, 533)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="10" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1547, 400)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="11" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1542, 245)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="12" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1665, 208)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="13" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1798, 224)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="14" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1905, 299)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="15" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1980, 438)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="16" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1996, 545)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="17" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2124, 524)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="18" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2188, 423)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="19" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2247, 346)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="20" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2300, 202)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="21" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2391, 213)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="22" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2476, 202)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="4" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2612, 210)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="31" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2606, 104)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="32" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2600, 15)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="33" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2610, -115)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="34" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2727, -115)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="35" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2854, -121)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="36" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2867, -29)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="37" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2765, -29)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="38" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2755, 63)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="39" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2882, 60)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="40" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2987, 57)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="41" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3114, -92)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="42" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3292, -209)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="43" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3343, 7)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="44" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3219, 142)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="45" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3219, 346)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="46" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3019, 438)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="47" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2797, 622)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="48" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2797, 622)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="49" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2829, 750)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="50" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2957, 659)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="51" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(3149, 910)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="52" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2882, 974)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="53" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2716, 963)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="54" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2620, 787)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="55" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2492, 696)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="56" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2289, 878)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="57" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2604, 910)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="58" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(2300, 1038)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="59" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1932, 1081)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="60" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1932, 931)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="61" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1761, 936)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="62" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1697, 1080)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="63" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1553, 1096)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="64" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1409, 1117)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="65" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1313, 1133)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="66" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(1147, 1096)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="67" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(992, 1085)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="68" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(859, 1053)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="69" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(645, 1021)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="70" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(490, 957)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="71" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(431, 866)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="72" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(356, 759)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="73" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(361, 642)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+
+[node name="74" type="Sprite2D" parent="The/Tiles"]
+position = Vector2(382, 546)
+texture = ExtResource("4_4vpuk")
+script = ExtResource("5_gc1ae")
+goTo = Array[NodePath]([NodePath("../start")])
+
+[node name="Camera" type="Camera2D" parent="."]
+position_smoothing_enabled = true
+script = ExtResource("2")
+
+[node name="Players" type="Node2D" parent="."]
+
+[node name="Player" parent="Players" instance=ExtResource("7_27qut")]
+
+[node name="GameHud" type="CanvasLayer" parent="."]
+
+[node name="CurrentPlayer" type="Label" parent="GameHud"]
+offset_right = 40.0
+offset_bottom = 23.0

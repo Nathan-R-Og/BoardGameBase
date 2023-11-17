@@ -1,0 +1,16 @@
+res://default_env.tres
+res://assetsOld/scenes/board/Board.tscn
+res://assetsOld/scenes/board/space.gd
+res://assetsOld/scenes/board/move.gd
+res://assetsOld/scenes/board/HUD.gd
+res://assetsOld/scenes/board/Camera.gd
+res://assetsOld/scenes/board/load.gd
+res://assetsOld/scenes/board/Board.gd
+res://assetsOld/scenes/INSTANCES/player.tscn
+res://assetsOld/scenes/INSTANCES/player/player.tscn
+res://assetsOld/scenes/INSTANCES/player/HUD.gd
+res://assets/scenes/board/Board.tscn
+res://assets/scenes/board/Board.gd
+res://assets/scenes/INSTANCES/player/player.tscn
+res://assets/scenes/board/Space.gd
+res://assets/scenes/board/Tiles.gd

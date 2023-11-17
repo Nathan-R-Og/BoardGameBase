@@ -1,0 +1,47 @@
+[gd_scene load_steps=4 format=3 uid="uid://cev3myoour5cf"]
+
+[ext_resource type="Script" path="res://assets/scenes/INSTANCES/player/move.gd" id="1_1hsgn"]
+[ext_resource type="Script" path="res://assets/scenes/INSTANCES/player/HUD.gd" id="2_ckwye"]
+
+[sub_resource type="SpriteFrames" id="1"]
+animations = [{
+"frames": [],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}]
+
+[node name="Player" type="Node2D"]
+script = ExtResource("1_1hsgn")
+moveSpd = 0.1
+
+[node name="icon" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("1")
+animation = &"idle"
+
+[node name="Label" type="Label" parent="."]
+offset_left = -37.0
+offset_top = -21.0
+offset_right = 40.0
+offset_bottom = 14.0
+
+[node name="HUD" type="CanvasLayer" parent="."]
+visible = false
+script = ExtResource("2_ckwye")
+simLimit = 0.5
+
+[node name="simRoll" type="CheckButton" parent="HUD"]
+offset_left = 840.0
+offset_top = 173.0
+offset_right = 969.0
+offset_bottom = 213.0
+text = "sim roll"
+
+[node name="Label" type="Label" parent="HUD"]
+offset_left = 18.0
+offset_top = 25.0
+offset_right = 193.0
+offset_bottom = 96.9998
+
+[node name="DICE" type="Node2D" parent="HUD"]
+position = Vector2(928, 508)
